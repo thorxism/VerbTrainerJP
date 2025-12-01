@@ -177,6 +177,86 @@ class _ConjugationPracticeScreenState extends State<ConjugationPracticeScreen> {
         'passive': {'japanese': 'いられる', 'english': 'is... (animate, passive)'},
       },
     ),
+    Verb(
+      name: '話す',
+      furigana: 'はなす',
+      conjugations: {
+        'present': {'japanese': '話す', 'english': 'to speak'},
+        'negative': {'japanese': '話さない', 'english': 'not to speak'},
+        'past': {'japanese': '話した', 'english': 'spoke'},
+        'past negative': {'japanese': '話さなかった', 'english': 'did not speak'},
+        'te-form': {'japanese': '話して', 'english': 'speaking / speak and...'},
+        'potential': {'japanese': '話せる', 'english': 'can speak'},
+        'volitional': {'japanese': '話そう', 'english': 'let\'s speak'},
+        'imperative': {'japanese': '話せ', 'english': 'speak! (command)'},
+        'causative': {'japanese': '話させる', 'english': 'make someone speak'},
+        'passive': {'japanese': '話される', 'english': 'is spoken'},
+      },
+    ),
+    Verb(
+      name: '聞く',
+      furigana: 'きく',
+      conjugations: {
+        'present': {'japanese': '聞く', 'english': 'to listen'},
+        'negative': {'japanese': '聞かない', 'english': 'not to listen'},
+        'past': {'japanese': '聞いた', 'english': 'listened'},
+        'past negative': {'japanese': '聞かなかった', 'english': 'did not listen'},
+        'te-form': {'japanese': '聞いて', 'english': 'listening / listen and...'},
+        'potential': {'japanese': '聞ける', 'english': 'can listen'},
+        'volitional': {'japanese': '聞こう', 'english': 'let\'s listen'},
+        'imperative': {'japanese': '聞け', 'english': 'listen! (command)'},
+        'causative': {'japanese': '聞かせる', 'english': 'make someone listen'},
+        'passive': {'japanese': '聞かれる', 'english': 'is listened to'},
+      },
+    ),
+    Verb(
+      name: '飲む',
+      furigana: 'のむ',
+      conjugations: {
+        'present': {'japanese': '飲む', 'english': 'to drink'},
+        'negative': {'japanese': '飲まない', 'english': 'not to drink'},
+        'past': {'japanese': '飲んだ', 'english': 'drank'},
+        'past negative': {'japanese': '飲まなかった', 'english': 'did not drink'},
+        'te-form': {'japanese': '飲んで', 'english': 'drinking / drink and...'},
+        'potential': {'japanese': '飲める', 'english': 'can drink'},
+        'volitional': {'japanese': '飲もう', 'english': 'let\'s drink'},
+        'imperative': {'japanese': '飲め', 'english': 'drink! (command)'},
+        'causative': {'japanese': '飲ませる', 'english': 'make someone drink'},
+        'passive': {'japanese': '飲まれる', 'english': 'is drunk'},
+      },
+    ),
+    Verb(
+      name: '買う',
+      furigana: 'かう',
+      conjugations: {
+        'present': {'japanese': '買う', 'english': 'to buy'},
+        'negative': {'japanese': '買わない', 'english': 'not to buy'},
+        'past': {'japanese': '買った', 'english': 'bought'},
+        'past negative': {'japanese': '買わなかった', 'english': 'did not buy'},
+        'te-form': {'japanese': '買って', 'english': 'buying / buy and...'},
+        'potential': {'japanese': '買える', 'english': 'can buy'},
+        'volitional': {'japanese': '買おう', 'english': 'let\'s buy'},
+        'imperative': {'japanese': '買え', 'english': 'buy! (command)'},
+        'causative': {'japanese': '買わせる', 'english': 'make someone buy'},
+        'passive': {'japanese': '買われる', 'english': 'is bought'},
+      },
+    ),
+    Verb(
+      name: '待つ',
+      furigana: 'まつ',
+      conjugations: {
+        'present': {'japanese': '待つ', 'english': 'to wait'},
+        'negative': {'japanese': '待たない', 'english': 'not to wait'},
+        'past': {'japanese': '待った', 'english': 'waited'},
+        'past negative': {'japanese': '待たなかった', 'english': 'did not wait'},
+        'te-form': {'japanese': '待って', 'english': 'waiting / wait and...'},
+        'potential': {'japanese': '待てる', 'english': 'can wait'},
+        'volitional': {'japanese': '待とう', 'english': 'let\'s wait'},
+        'imperative': {'japanese': '待て', 'english': 'wait! (command)'},
+        'causative': {'japanese': '待たせる', 'english': 'make someone wait'},
+        'passive': {'japanese': '待たれる', 'english': 'is waited for'},
+      },
+    ),
   ];
 
   @override
@@ -305,7 +385,7 @@ class _ConjugationPracticeScreenState extends State<ConjugationPracticeScreen> {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
-        middle: const Text('Ichidan Verb Practice'),
+        middle: const Text('Japanese Verb Practice'),
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
